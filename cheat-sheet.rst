@@ -1,6 +1,6 @@
-****
+***********************
 Cloud Files Cheat Sheet
-****
+***********************
 
 **Table of Contents**
 
@@ -10,9 +10,9 @@ Cloud Files Cheat Sheet
     :backlinks: none
 
 
-====
+============
 Authenticate
-====
+============
 
 .. code-block:: bash
 
@@ -22,13 +22,13 @@ Authenticate
     #   for storageURL where X is the entry in the serviceCatalog
     #   pertaining to cloud files
 
-====
+==========
 Containers
-====
+==========
 
-----
+-------
 Listing
-----
+-------
 
 **Request**
 
@@ -67,9 +67,9 @@ Listing
     ]
 
 
------
+--------
 Creating
------
+--------
 
 **Request**
 
@@ -88,9 +88,9 @@ Creating
     Date: Mon, 22 Apr 2013 16:21:42 GMT
     X-Trans-Id: tx5a6a0f97a0334dd0b93933b4ec23dde7
 
------
+--------
 Deleting
------
+--------
 
 **Request**
 
@@ -109,13 +109,13 @@ Deleting
     Date: Mon, 22 Apr 2013 16:22:20 GMT
     X-Trans-Id: tx289e332d72694c86828c39e45b34f3b6
 
-=====
+=======
 Objects
-=====
+=======
 
------
+-------
 Listing
------
+-------
 
 **Request**
 
@@ -149,9 +149,9 @@ Listing
     ]
 
 
------
+--------
 Fetching
------
+--------
 
 RFC 2616 conditional fetching is supported. Take note of headers: If-Match, If-None-Match, If-Modified-Since, If-Unmodified-Since. Range fetch is also supported.
 
@@ -180,9 +180,9 @@ RFC 2616 conditional fetching is supported. Take note of headers: If-Match, If-N
     [....]
 
 
-----
+--------
 Creating
-----
+--------
 
 You can ensure end-to-end data integrity by including an MD5 checksum in the object's ETag header.
 
@@ -208,9 +208,9 @@ Automatic deletion can be programmed in by setting the X-Delete-At or X-Delete-A
     X-Trans-Id: tx468010bbbf434131afe79ab95bdfd5ec
 
 
------
+----------------------
 Large Objects Creation
------
+----------------------
 
 For objects larger than 5GB, do as follows:
 
@@ -220,26 +220,26 @@ For objects larger than 5GB, do as follows:
 
 Now you can either fetch the segments individually or fetch the entire object by fetching the manifest.
 
-------
+----------------
 Chunked Transfer
-------
+----------------
 
 1. Set HTTP header Transfer-Encoding: chunked
 2. Do not specify a Content-Length header.
 3. You are responsible for pre-splitting if the stream would be larger than 5 GB.
 
-------
+--------------------
 Enabling Compression
-------
+--------------------
 
 1. Compress your data.
 2. Set the header Content-Encoding: gzip when you create the object.
 
 Cloud Files does not compress your data. This serves as metadata for future requests.
 
-------
+----------------
 Server-side Copy
-------
+----------------
 
 **Request**
 
