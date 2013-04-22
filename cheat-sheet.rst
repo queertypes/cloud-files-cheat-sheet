@@ -6,6 +6,8 @@ Commands below are given using `httpie`_, the Python command line HTTP client.
 
 .. _httpie: https://github.com/jkbr/httpie
 
+**Table of Contents**
+
 .. contents::
     :local:
     :depth: 2
