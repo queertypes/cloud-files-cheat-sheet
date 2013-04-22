@@ -2,8 +2,6 @@
 Cloud Files Cheat Sheet
 ****
 
-:version: 0.5.0
-
 **Table of Contents**
 
 .. contents::
