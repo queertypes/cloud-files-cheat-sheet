@@ -1,6 +1,6 @@
-***********************
-Cloud Files Cheat Sheet
-***********************
+***************************
+Openstack Swift Cheat Sheet
+***************************
 
 **Table of Contents**
 

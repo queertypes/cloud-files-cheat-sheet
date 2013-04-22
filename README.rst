@@ -1,10 +1,12 @@
-***********************
-Cloud Files Cheat Sheet
-***********************
+***************************
+Openstack Swift Cheat Sheet
+***************************
 
-:version: 0.9.3
+:version: 0.9.4
 
-This is a collection of notes on using an Openstack Swift endpoint for data storage operations. It also assumes that you have access to a connected Openstack Keystone endpoint.
+This is a collection of notes for using an Openstack Swift endpoint for data storage operations. It also assumes that you have access to a connected Openstack Keystone endpoint.
+
+**Note**: This document was created against the Rackspace Cloud Files and Identity APIs. There should be no differences between these APIs and the Openstack equivalents, but please notify me if there are.
 
 ========
 Building
