@@ -2,6 +2,13 @@
 Cloud Files Cheat Sheet
 ***********************
 
+**Table of Contents**
+
+.. contents::
+    :local:
+    :depth: 2
+
+
 ============
 Authenticate
 ============
