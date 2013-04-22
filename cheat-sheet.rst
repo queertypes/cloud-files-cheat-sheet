@@ -11,6 +11,7 @@ Commands below are given using `httpie`_, the Python command line HTTP client.
 .. contents::
     :local:
     :depth: 2
+    :backlinks: top
 
 .. raw:: pdf
 
