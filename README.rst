@@ -2,7 +2,7 @@
 Openstack Swift Cheat Sheet
 ***************************
 
-:version: 0.9.4
+:version: 0.9.5
 
 This is a collection of notes for using an Openstack Swift endpoint for data storage operations. It also assumes that you have access to a connected Openstack Keystone endpoint.
 
@@ -29,6 +29,11 @@ When printing the cheat sheet, it's helpful to remove the table of contents. To 
     .. contents::
         :local:
         :depth: 2
+
+    .. raw:: pdf
+
+        PageBreak
+
 
 Rebuild the document and it's ready for printing!
 
