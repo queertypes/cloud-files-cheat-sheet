@@ -6,6 +6,8 @@ Cloud Files Cheat Sheet
 Authenticate
 ============
 
+**Request**
+
 .. code-block:: bash
 
     http POST https://identity.api.rackspacecloud.com/v2.0/tokens \
@@ -15,6 +17,55 @@ Authenticate
     # extract response.access.serviceCatalog.X.endpoints[0].publicURL 
     #   for storageURL where X is the entry in the serviceCatalog
     #   pertaining to cloud files
+
+
+**Response**
+
+.. code-block:: http
+
+    HTTP/1.1 200 OK
+    Connection: keep-alive
+    Content-Encoding: gzip
+    Content-Type: application/json
+    Date: Mon, 22 Apr 2013 17:31:38 GMT
+    Front-End-Https: on
+    Server: nginx/0.8.55
+    Transfer-Encoding: chunked
+    VIA: 1.0 Repose (Repose/2.3.5)
+    response-source: cloud-auth
+    vary: Accept, Accept-Encoding, X-Auth-Token
+
+    {
+        "access": {
+            "serviceCatalog": [
+                [...]
+                {
+                    "endpoints": [
+                        {
+                            "internalURL": "snet-storageURL",
+                            "publicURL": "storageURL",
+                            "region": "DFW"
+                        }
+                    ],
+                    "name": "cloudFiles",
+                    "type": "object-store"
+                },
+            ],
+            "token": {
+                "expires": "2013-04-23T09:45:24.000-05:00",
+                "id": "auth_token",
+            },
+            "user": {
+                [...]
+            }
+        }
+    }
+
+
+.. raw:: pdf
+
+    PageBreak
+
 
 ==========
 Containers
@@ -82,6 +133,11 @@ Creating
     Date: Mon, 22 Apr 2013 16:21:42 GMT
     X-Trans-Id: tx5a6a0f97a0334dd0b93933b4ec23dde7
 
+.. raw:: pdf
+
+    PageBreak
+
+
 --------
 Deleting
 --------
@@ -102,6 +158,11 @@ Deleting
     Content-Type: text/html; charset=UTF-8
     Date: Mon, 22 Apr 2013 16:22:20 GMT
     X-Trans-Id: tx289e332d72694c86828c39e45b34f3b6
+
+.. raw:: pdf
+
+    PageBreak
+
 
 =======
 Objects
@@ -231,6 +292,11 @@ Enabling Compression
 2. Set the header Content-Encoding: gzip when you create the object.
 
 Cloud Files does not compress your data. This serves as metadata for future requests.
+
+.. raw:: pdf
+
+    PageBreak
+
 
 ----------------
 Server-side Copy
