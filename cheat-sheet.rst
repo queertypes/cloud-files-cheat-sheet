@@ -6,7 +6,9 @@ Commands below are given using `httpie`_, the Python command line HTTP client.
 
 .. _httpie: https://github.com/jkbr/httpie
 
-**Table of Contents**
+========
+Contents
+========
 
 .. contents::
     :local:
@@ -87,9 +89,9 @@ Authenticate
 Containers
 ==========
 
--------
-Listing
--------
+------------------
+Listing Containers
+------------------
 
 **Request**
 
@@ -128,9 +130,9 @@ Listing
     ]
 
 
---------
-Creating
---------
+-------------------
+Creating Containers
+-------------------
 
 **Request**
 
@@ -184,9 +186,9 @@ Deleting
 Objects
 =======
 
--------
-Listing
--------
+---------------
+Listing Objects
+---------------
 
 **Request**
 
@@ -251,9 +253,9 @@ RFC 2616 conditional fetching is supported. Take note of headers: If-Match, If-N
     [....]
 
 
---------
-Creating
---------
+----------------
+Creating Objects
+----------------
 
 You can ensure end-to-end data integrity by including an MD5 checksum in the object's ETag header.
 
@@ -314,9 +316,9 @@ Cloud Files does not compress your data. This serves as metadata for future requ
     PageBreak
 
 
-----------------
-Server-side Copy
-----------------
+------------
+Copy Objects
+------------
 
 **Request**
 
