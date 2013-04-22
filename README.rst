@@ -2,7 +2,7 @@
 Openstack Swift Cheat Sheet
 ***************************
 
-:version: 0.9.11
+:version: 0.9.12
 
 This is a collection of notes for using an Openstack Swift endpoint for data storage operations. It also assumes that you have access to a connected Openstack Keystone endpoint. For brevity's sake, the description of many operations has been abridged or left out entirely. A link is provided below to one authoritative document.
 
