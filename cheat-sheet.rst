@@ -2,21 +2,15 @@
 Cloud Files Cheat Sheet
 ***********************
 
-**Table of Contents**
-
-.. contents::
-    :local:
-    :depth: 3
-    :backlinks: none
-
-
 ============
 Authenticate
 ============
 
 .. code-block:: bash
 
-    http POST https://identity.api.rackspacecloud.com/v2.0/tokens auth:='{"passwordCredentials": {"username": "myuser", "password": "mypass"}}' content-type:application/json
+    http POST https://identity.api.rackspacecloud.com/v2.0/tokens \
+      auth:='{"passwordCredentials": {"username": "myuser", "password": "mypass"}}' \
+      content-type:application/json
     # extract response.access.token.id for auth_token
     # extract response.access.serviceCatalog.X.endpoints[0].publicURL 
     #   for storageURL where X is the entry in the serviceCatalog
@@ -192,7 +186,8 @@ Automatic deletion can be programmed in by setting the X-Delete-At or X-Delete-A
 
 .. code-block:: bash
 
-    http put $STORAGE/Test/tacos x-auth-token:$AUTH_TOKEN content-length:64 x-delete-after:10 < tacos
+    http put $STORAGE/Test/tacos x-auth-token:$AUTH_TOKEN \
+      content-length:64 x-delete-after:10 < tacos
 
 
 **Response**
@@ -245,7 +240,8 @@ Server-side Copy
 
 .. code-block:: bash
 
-    http put $STORAGE/Test/tacos-copy x-auth-token:$AUTH_TOKEN content-length:64 x-copy-from:/Test/tacos
+    http put $STORAGE/Test/tacos-copy x-auth-token:$AUTH_TOKEN \
+      content-length:64 x-copy-from:/Test/tacos
 
 
 **Response**
