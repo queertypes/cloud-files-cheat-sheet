@@ -184,11 +184,11 @@ RFC 2616 conditional fetching is supported. Take note of headers: If-Match, If-N
 Creating
 ----
 
-**Request**
-
 You can ensure end-to-end data integrity by including an MD5 checksum in the object's ETag header.
 
 Automatic deletion can be programmed in by setting the X-Delete-At or X-Delete-After headers. X-Delete-At takes a UNIX timestamp. X-Delete-After takes an integer representing a number of seconds.
+
+**Request**
 
 .. code-block:: bash
 
