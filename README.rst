@@ -8,7 +8,7 @@ This is a collection of notes for using an Openstack Swift endpoint for data sto
 
 **Note**: This document was created against the `Rackspace Cloud Files`_ and Identity APIs. There should be no differences between these APIs and the Openstack equivalents, but please notify me if there are.
 
-.. _Rackspace Cloud Files: http://docs.rackspace.com/files/api/v1/cf-devguide/cf-devguide-20130201.pdf
+.. _Rackspace Cloud Files: http://docs.rackspace.com/files/api/v1/cf-devguide/cf-devguide-20160201.pdf
 
 ========
 Building
@@ -43,4 +43,4 @@ Rebuild the document and it's ready for printing!
 Author
 ======
 
-If you have any questions, corrections, or contributions, please contact Alejandro Cabrera <alejandro.cabrera@rackspace.com>.
+If you have any questions, corrections, or contributions, please contact Allele Dev <allele.dev@gmail.com>.

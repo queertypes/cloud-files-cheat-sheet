@@ -43,7 +43,7 @@ Authenticate
     Connection: keep-alive
     Content-Encoding: gzip
     Content-Type: application/json
-    Date: Mon, 22 Apr 2013 17:31:38 GMT
+    Date: Mon, 22 Apr 2016 17:31:38 GMT
     Front-End-Https: on
     Server: nginx/0.8.55
     Transfer-Encoding: chunked
@@ -68,7 +68,7 @@ Authenticate
                 },
             ],
             "token": {
-                "expires": "2013-04-23T09:45:24.000-05:00",
+                "expires": "2016-04-23T09:45:24.000-05:00",
                 "id": "auth_token",
             },
             "user": {
@@ -106,7 +106,7 @@ Listing Containers
     Accept-Ranges: bytes
     Content-Length: 93
     Content-Type: application/json; charset=utf-8
-    Date: Mon, 22 Apr 2013 16:18:24 GMT
+    Date: Mon, 22 Apr 2016 16:18:24 GMT
     X-Account-Bytes-Used: 1096
     X-Account-Container-Count: 2
     X-Account-Meta-Temp-Url-Key: 1cf501017a96ff62b8056da007ebb3f1
@@ -146,7 +146,7 @@ Creating Containers
     HTTP/1.1 201 Created
     Content-Length: 0
     Content-Type: text/html; charset=UTF-8
-    Date: Mon, 22 Apr 2013 16:21:42 GMT
+    Date: Mon, 22 Apr 2016 16:21:42 GMT
     X-Trans-Id: tx5a6a0f97a0334dd0b93933b4ec23dde7
 
 .. raw:: pdf
@@ -172,7 +172,7 @@ Deleting
     HTTP/1.1 204 No Content
     Content-Length: 0
     Content-Type: text/html; charset=UTF-8
-    Date: Mon, 22 Apr 2013 16:22:20 GMT
+    Date: Mon, 22 Apr 2016 16:22:20 GMT
     X-Trans-Id: tx289e332d72694c86828c39e45b34f3b6
 
 .. raw:: pdf
@@ -203,7 +203,7 @@ Listing Objects
     Accept-Ranges: bytes
     Content-Length: 170
     Content-Type: application/json; charset=utf-8
-    Date: Mon, 22 Apr 2013 16:32:01 GMT
+    Date: Mon, 22 Apr 2016 16:32:01 GMT
     X-Container-Bytes-Used: 1096
     X-Container-Object-Count: 1
     X-Timestamp: 1347036637.53485
@@ -214,7 +214,7 @@ Listing Objects
             "bytes": 1096, 
             "content_type": "application/octet-stream", 
             "hash": "e4950045ea277a5428c4c9ede564891e", 
-            "last_modified": "2012-09-07T16:50:59.222800", 
+            "last_modified": "2016-09-07T16:50:59.222800", 
             "name": "README"
         }
     ]
@@ -241,9 +241,9 @@ RFC 2616 conditional fetching is supported. Take note of headers: If-Match, If-N
     Accept-Ranges: bytes
     Content-Length: 1096
     Content-Type: application/octet-stream
-    Date: Mon, 22 Apr 2013 16:35:53 GMT
+    Date: Mon, 22 Apr 2016 16:35:53 GMT
     Etag: e4950045ea277a5428c4c9ede564891e
-    Last-Modified: Fri, 07 Sep 2012 16:50:59 GMT
+    Last-Modified: Fri, 07 Sep 2016 16:50:59 GMT
     X-Timestamp: 1347036659.22280
     X-Trans-Id: tx9cd061cf3f17421bb03a9002842278ab
     
@@ -274,9 +274,9 @@ Automatic deletion can be programmed in by setting the X-Delete-At or X-Delete-A
     HTTP/1.1 201 Created
     Content-Length: 0
     Content-Type: text/html; charset=UTF-8
-    Date: Mon, 22 Apr 2013 16:42:29 GMT
+    Date: Mon, 22 Apr 2016 16:42:29 GMT
     Etag: 68f55613d95a0316a994abc41edda7c9
-    Last-Modified: Mon, 22 Apr 2013 16:42:28 GMT
+    Last-Modified: Mon, 22 Apr 2016 16:42:28 GMT
     X-Trans-Id: tx468010bbbf434131afe79ab95bdfd5ec
 
 
@@ -333,11 +333,11 @@ Copy Objects
     HTTP/1.1 201 Created
     Content-Length: 0
     Content-Type: text/html; charset=UTF-8
-    Date: Mon, 22 Apr 2013 17:00:48 GMT
+    Date: Mon, 22 Apr 2016 17:00:48 GMT
     Etag: 68f55613d95a0316a994abc41edda7c9
-    Last-Modified: Mon, 22 Apr 2013 17:00:47 GMT
+    Last-Modified: Mon, 22 Apr 2016 17:00:47 GMT
     X-Copied-From: Test/tacos
-    X-Copied-From-Last-Modified: Mon, 22 Apr 2013 17:00:32 GMT
+    X-Copied-From-Last-Modified: Mon, 22 Apr 2016 17:00:32 GMT
     X-Trans-Id: tx61fd4975147d4a29a5ce9dfd14e12b66
 
 
